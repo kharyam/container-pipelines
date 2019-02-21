@@ -78,11 +78,12 @@ pipeline {
       }
     }
 
+    /*
     stage('Promote from Build to Dev') {
       steps {
         tagImage(sourceImageName: env.APP_NAME, sourceImagePath: env.BUILD, toImagePath: env.DEV)
       }
-    }
+    }*/
 
     stage ('Verify Deployment to Dev') {
       steps {
